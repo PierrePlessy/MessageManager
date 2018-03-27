@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/textName"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="Nom d'utilisateur"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <CheckBox
+        android:id="@+id/checkBoxRemember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="227dp"
+        android:layout_alignStart="@+id/textName"
+        android:layout_alignParentTop="true"
+        android:text="Se souvenir de moi" />
+
+    <Button
+        android:id="@+id/buttonEmpty"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:layout_alignStart="@+id/textName"
+        android:layout_alignParentBottom="true"
+        android:text="Vider" />
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonEmpty"
+        android:layout_alignEnd="@+id/textName"
+        android:text="Envoyer" />
+
+    <EditText
+        android:id="@+id/textPassword"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="143dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-47dp"
+        android:layout_above="@+id/textName"
+        android:layout_alignStart="@+id/textName"
+        android:text="Nom d'utilisateur" />
+
+    <TextView
+        android:id="@+id/textViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-143dp"
+        android:layout_above="@+id/textPassword"
+        android:layout_alignStart="@+id/textName"
+        android:text="Mot de passe" />
+
+</RelativeLayout>
